@@ -37,6 +37,8 @@ body {
 }
 
 a {
+      font-family: 'Archivo', sans-serif;
+      font-weight: 400;
       text-decoration: none;
       color: #E0E0E0;
 }
@@ -172,7 +174,7 @@ b {
       text-align: left;
       padding-left: 4%;
       padding-right: 4%;
-      font-size: 2em;
+      font-size: 1.5em;
       line-height: 1.2em;
 
       vertical-align: center;
@@ -235,7 +237,7 @@ b {
       line-height: 1.6em;
 }
 .small {
-      font-size: 1em;
+      font-size: 0.8em;
       line-height: 2em;
       z-index: 1;
       text-align: left;
@@ -641,7 +643,7 @@ b {
 /*      Media queries     */
 
 @media only screen and (max-width: 640px)  {
-      .introduction { padding-top: 1em; padding-bottom: 1em; }
+      .introduction { padding-top: 1em; padding-bottom: 1em; padding-right: 4%; height: 50%; }
       .article { padding-top: 6em; }
       .grid-three { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
       .grid-two { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
