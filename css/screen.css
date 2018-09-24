@@ -13,7 +13,7 @@ html {
 }
 
 @font-face {
-      font-family: 'Sporting Grotesque';
+      font-family: 'Cormorant', serif;
       font-weight: 400;
     font-style: normal;
 }
@@ -26,7 +26,7 @@ body {
       font-size: 16px;
 
       margin: 0;
-      font-family: 'Sporting Grotesque';
+      font-family: 'Cormorant', serif;
 		font-style: normal;
       color: #ffffff;
       
@@ -48,6 +48,13 @@ a:hover {
 
 * {
       box-sizing: border-box;
+}
+
+b {
+      font-family: 'Archivo', sans-serif;
+      font-weight: 600;
+      font-size: 0.8em;
+      display: inline;
 }
 
 
@@ -138,7 +145,6 @@ a:hover {
 
 .home {
 
-      padding-top: 3em;
       height: auto
       display: grid;
       justify-items: center;
@@ -356,14 +362,14 @@ a:hover {
 }
 
 .introduction {
-      padding-left: 0.8em;
-      padding-right: 1em;
+      padding-left: 4%;
+      padding-right: 12em;
       margin: 0 auto;
       vertical-align: center;
       align-content: center;
       text-align: left;
 
-      font-size: 2.3em;
+      font-size: 1.6em;
       line-height: 1.2em;
 
       display: grid;
@@ -372,6 +378,8 @@ a:hover {
 
       grid-column-gap: 2em;
       grid-row-gap: 2em;
+
+      height: 90%;
 }
 
 .about img { display: inline; }
@@ -467,7 +475,6 @@ a:hover {
 
 .article {
 
-      padding-top: 6em;
       height: auto
       display: grid;
       justify-items: center;
