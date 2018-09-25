@@ -670,8 +670,10 @@ b {
       .grid-three { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
       .grid-two { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
       .logo { display: none; }
+      .footer {  grid-template-columns: repeat(1, 1fr); }
        .one { padding-left: 2em; padding-right: 2em; }
       .art { display: none; }
+      .item { margin-bottom: 2em; }
       .nav { grid-column: 1; grid-row: 1; }
       .about { padding: 0.8em; font-size: 2em; }
       .work { padding-top: 2em; grid-template-columns: 1fr;  }
@@ -689,7 +691,8 @@ b {
       .article { padding-top: 6em; }
 
       .introduction { padding-top: 1em; padding-bottom: 1em; }
-      .grid-three { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
+      .grid-three { display: block; grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
+      .item { margin-bottom: 2em; }
      .grid-two { grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
        .minimized { display: none; }
        .one { padding-left: 2em; padding-right: 2em; }
@@ -698,8 +701,10 @@ b {
 }
 
 @media only screen and (min-width: 960px)  {
-      body {font-size: 20px;}
+      body {font-size: 20px; grid-template-columns: repeat(1, 1fr); }
+      .home {  grid-template-columns: repeat(1, 1fr); }
       .minimized { display: none; }
+      .item { margin-bottom: 2em; }
 }
 
 @media only screen and (min-width: 1440px)  {
