@@ -23,7 +23,7 @@ body {
       width: 100%;
       min-height: 100%;
       padding: 0;
-      font-size: 16px;
+      font-size: 20px;
 
       margin: 0;
       font-family: 'Cormorant', serif;
@@ -214,7 +214,6 @@ b {
 
 .grid-two {
       z-index: 1;
-      padding-top: 2em;
       padding-left: 4%;
       padding-right: 4%;
       display: grid;
@@ -613,7 +612,8 @@ b {
 /*      Media queries     */
 
 @media only screen and (max-width: 640px)  {
-      .introduction { padding-top: 1em; padding-bottom: 1em; padding-right: 4%; height: 50%; }
+      body { font-size: 20px; }
+      .introduction { padding-top: 4em; padding-bottom: 4em; padding-right: 4%; height: auto; }
       .article { padding-top: 6em; }
       .grid-two { display: block; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
       .grid-two .item { margin-bottom: 2em; }
