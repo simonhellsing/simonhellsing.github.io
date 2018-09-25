@@ -101,15 +101,16 @@ b {
 .header {
       position: fixed;
       width: 100%;
-      padding: 2em;
+      padding-left: 4%;
       height: 4em;
 }
 
 .minimized { display: block; }
 
 .header .dot {
-      width: 2em;
-      height: 2em;
+      padding-top: 1em;
+      width: 3em;
+      height: 3em;
       border-radius: 2em;
 
       -webkit-transition: all 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -117,6 +118,10 @@ b {
 
 
       transform: scale(1);
+}
+
+.header .dot img {
+      width: 100%;
 }
 
 .dot:hover {
@@ -472,6 +477,7 @@ b {
 
 .article {
 
+      padding-top: 1em;
       height: auto
       display: grid;
       justify-items: center;
@@ -613,19 +619,21 @@ b {
 
 @media only screen and (max-width: 640px)  {
       body { font-size: 20px; }
-      .introduction { padding-top: 4em; padding-bottom: 4em; padding-right: 4%; height: auto; }
-      .article { padding-top: 6em; }
+      .introduction { padding-top: 2em; padding-bottom: 2em; padding-left: 8%; padding-right: 8%; height: auto; }
+      .article { padding-top: 1em; }
       .grid-two { display: block; grid-template-columns: repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); grid-row-gap: 1em; }
       .grid-two .item { margin-bottom: 2em; }
       .grid-two .item .screen { padding: 3em; }
+      .tall { padding-top: 0em; padding-bottom: 0em; }
       .mobile { padding: 2em; padding-top: 1em; padding-bottom: 1em; }
-      .footer {  grid-template-columns: repeat(1, 1fr); }
-      .one { padding-left: 2em; padding-right: 2em; }
+      .footer { font-size: 1.2em; grid-template-columns: repeat(1, 1fr); }
+      .one { padding: 1em; }
+      .full { padding: 0em; }
       
       .thumbnail img { width: 100%; }
       .project { height: auto; }
       .moodboard { padding-top: 2em; grid-template-columns: 1fr; }
-      .header .dot { width: 3em; height: 3em; border-radius: 3em; padding: 0.5em; }
+      .header .dot { width: 3em; height: 3em; border-radius: 2em; padding-top: 1em; }
 
 
 }
