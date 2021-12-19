@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="css/screen.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+ <script src="dist/jquery-3.3.1.min.js"></script>
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<a class="primary" href="#work">OK, See work</a>
+<a class="secondary" href="#home">About</a>
+
+<section id="home">
+
+<div class="profile">
+
+	<div class="content">
+
+		<h3>Simon Hellsing is a Digital Product Designer and Hyper Island alumni with 8+ years of experience designing digital products and services across a wide range of industries.</h3>
+	
+		<div class="navigation">
+			<a href="">Resume</a>
+			<a href="">Contact</a>
+		</div>
+
+	</div>
+	<div class="images">
+		
+		<video src="imgs/vid_04.mp4" muted autoplay loop/>
+	</div>
+
+</div>
+
+</section>
+
+
+<section id="work" class="hide">
+
+<div class="intro" id="work">
+	<div>
+		<h2>Selected work</h2>
+		<p>2012-2021</p>
+	</div>
+</div>
+
+<div class="thumbnail-gallery">
+
+			<a href="project.html"><img src="imgs/projects/thumb_01.jpg"/></a>
+
+		<img src="imgs/projects/thumb_02.jpg"/>
+		<img src="imgs/projects/thumb_03.jpg"/>
+		<img src="imgs/projects/thumb_04.jpg"/>
+		<img src="imgs/projects/thumb_05.jpg"/>
+		<img src="imgs/projects/thumb_06.jpg"/>
+		<img src="imgs/projects/thumb_07.jpg"/>
+</div>
+
+</section>
+
+<script>
+        $(document).ready(function() {
+            $(".primary").on('click', function() {
+                $("#work").removeClass("hide");
+                $("#home").addClass("hide");
+
+                
+            });
+
+            $(".secondary").on('click', function() {
+                $("#home").removeClass("hide");
+                $("#work").addClass("hide");
+            });
+        });
+
+</script>
+
+</body>
+</html>

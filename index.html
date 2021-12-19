@@ -1,88 +1,126 @@
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="css/screen.css">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+ <script src="dist/jquery-3.3.1.min.js"></script>
 
-<link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Cormorant" rel="stylesheet">
 
-<link rel="icon" type="image/png" href="imgs/favicon.png">
-<title>Simon Hellsing, Product Designer</title>
+<title>Simon Hellsing - Product Designer</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 </head>
+
+
+
 <body>
-<div class="home grey">
-<div class="introduction grey">
-  <span>
-  <b>Simon Hellsing</b> is an independant Product Designer and Hyper Island alumni, specialising in UI/UX Design and Branding. He's currently based out of Berlin, Germany.  
-  </span>
-</div>
+	<div class="navigation">
+			<a href="#home" class="home active">About</a>
+			<a href="#work" class="work">Work</a>
+			<a href="https://www.linkedin.com/in/simonhellsing/">Resum&#233;</a>
+			<a href="mailto:simonhellsing@gmail.com">Contact</a>
+	</div>
 
-<div class="grid-two grey">
+<div id="showsantander" style="position: fixed; display: none;">Santander</div>
 
-    <div>
-      <div class="item orange">
-          <div class="screen">
-             <a href="work/durated.html"><img src="imgs/thumbnails/durated.png" /></a>
-          </div>
-        </div>
+<section id="home">
 
-         <div class="item">
-            <a href="work/adidas.html"><img src="imgs/thumbnails/adidas.jpg" /></a>
-        </div>
+<div class="profile">
 
-        <div class="item orange">
-          <div class="screen">
-              <a href="work/canon.html"><img src="imgs/thumbnails/canon.png" /></a>
-          </div>
-        </div>
+	<div class="content">
 
-       
+		<h3>Simon Hellsing is a Digital Product Designer and Hyper Island alumni with 8+ years of experience designing digital products and services across a wide range of industries.</h3>
+	
+		<p>Clients include Mercedes, Santander, ThyssenKrupp and Adidas. Case studies available upon request.</p>
+		<video src="imgs/sequence.mp4" muted autoplay loop/>
 
-        
-    </div>
-
-    <div>
-
-      <div class="item beige tall">
-              <div class="screen">
-                  <a href="work/wimdu.html"><img class="mobile" src="imgs/thumbnails/wimdu.png" /></a>
-              </div>
-        </div>
-
-      <div class="item black">
-              <div class="screen">
-                  <a href="work/juniqe.html"><img src="imgs/thumbnails/juniqe.png" /></a>
-              </div>
-        </div>
-
-        
-
-        
-    </div>
-
+	</div>
+	<div class="images">
+		
+		<video src="imgs/sequence.mp4" muted autoplay loop/>
+	</div>
 
 </div>
 
-<div class="footer grey">
-    <div>
-      <b>Contact</b>
-          simon.hellsing@hyperisland.se</br>
-          (0049) 1575-6633464
-    </div>
-  <div>
-    <b>Connect</b>
-          <a href="https://www.linkedin.com/in/simonhellsing/">Linkedin</a></br>
-          <a href="https://www.instagram.com/simonhellsing/">Instagram</a></br>
-          <a href="https://www.pinterest.com/simonhellsing/">Pinterest</a></br>
-          <a href="https://www.dribbble.com/simonhellsing/">Dribbble</a>
-  </div>
-    </div>
+</section>
 
+
+
+
+<section id="work">
+
+<div class="intro" id="work">
+	<div style="width:100%">
+		<h2>Selected work</h2>
+		<p>2012-2021</p>
+	</div>
 </div>
 
+<div class="thumbnail-gallery">
+
+	<div>
+		<a href="santander.html"><img src="imgs/projects/thumb_01.jpg"/></a>
+		<p>Santander</p>
+	</div>
+	
+	<div>
+		<a href="mercedes.html"><img src="imgs/projects/mercedes/00_thumb.jpg"/></a>
+		<p>Mercedes</p>
+	</div>
+	
+	<div>
+		<a href="durated.html"><img src="imgs/projects/durated/00_thumb.jpg"/></a>
+		<p>Durated</p>
+	</div>
+
+	<div>
+		<a href="stater.html"><img src="imgs/projects/stater/00_thumb.jpg"/></a>
+		<p>Stater</p>
+	</div>
+
+
+	<div>
+		<a href="adidas.html"><img src="imgs/projects/adidas/00_thumb.jpg"/></a>
+		<p>Adidas</p>
+	</div>
+
+	<div>
+		<a href="juniqe.html"><img src="imgs/projects/juniqe/00_thumb.jpg"/></a>
+		<p>JUNIQUE</p>
+	</div>
+
+	
+</div>
+
+</section>
+
+
+
+
+<script type="text/javascript">
+	
+const sections = document.querySelectorAll("section");
+const navLi = document.querySelectorAll(".navigation a");
+window.onscroll = () => {
+  var current = "";
+
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    if (pageYOffset >= sectionTop - 60) {
+      current = section.getAttribute("id"); }
+  });
+
+  navLi.forEach((a) => {
+    a.classList.remove("active");
+    if (a.classList.contains(current)) {
+      a.classList.add("active");
+    }
+  });
+};
+</script>
 
 
 </body>
